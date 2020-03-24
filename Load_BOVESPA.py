@@ -85,7 +85,7 @@ B3_tickers.rename(columns={'ticker':'tickers'}, inplace=True)
 B3_tickers= B3_tickers.drop_duplicates(subset='tickers', keep="first")
 
 #Saving stock names in csv file
-B3_tickers.to_csv('SP_Bovespa/B3_tickers.csv')
+B3_tickers.to_csv('B3_tickers.csv')
 
 
 
@@ -99,8 +99,8 @@ def get_B3_from(source):
     error_stocks = []
 
     # Creates directory for the stock data CSV files
-    if not os.path.exists('SP_Bovespa/B3_SP_Bovespa/B3_stock_dfs'):
-        os.makedirs('SP_Bovespa/B3_SP_Bovespa/B3_stock_dfs')
+    if not os.path.exists('B3_stock_dfs'):
+        os.makedirs('B3_stock_dfs')
     
     # When data collecting will start and end for the Dates
     global start
@@ -424,7 +424,7 @@ def get_B3_from(source):
 
        
         # Saving csv file
-        df.to_csv('SP_Bovespa/B3_stock_dfs/{}.csv'.format(ticker))
+        df.to_csv('B3_stock_dfs/{}.csv'.format(ticker))
 
     #Showing any stocks with errors if there are any
     if error_stocks != []:
