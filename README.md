@@ -35,7 +35,7 @@ in the same directory as the code itself in a file called** *B3_stock_dfs*.
 
 **Functions the same way Load_Bovespa does, but instead of looking for the IBOVESPA stocks, it receives a CSV file with a list of stocks,
 then iterates through all of them and grabs the detailed data. The CSV file can have any data but the list with the stocks MUST be the
-second column (index + stocks column). For now, it´s just how the code works, sorry if i´m not THE all mighty dev. Feel free to suggest
+second column (index + stocks column). For now, it´s just how the code works. Feel free to suggest
 changes for this.**
 
 ### Usage:
@@ -111,8 +111,7 @@ Os dados das ações serão salvos no mesmo diretório que o código dentro de u
 
 **Funciona do mesmo jeito que o Load_Bovespa, porém ao invés de coletar dados das ações da IBOVESPA, ele recebe um arquivo CSV
 com uma lista de ações, e então vai iterar por tdos eles e coletar os dados detalhados. O arquivo CSV pode ter quaisquer dados mas
-a lista com as ações TEM QUE ser a segunda coluna (índice + coluna com ações). Por enquanto, é assim que o código funciona, desculpa 
-não ser O mestre desenvolvedor. Sinta-se livre para sugerir melhoras nessa parte.**
+a lista com as ações TEM QUE ser a segunda coluna (índice + coluna com ações). Por enquanto, é assim que o código funciona. Sinta-se livre para sugerir melhoras nessa parte.**
 
 ### Uso:
   *yahoo_scraper.py -i caminho_para/arquivo.csv*  **ou** *yahoo_scraper.py --ifile= caminho_para/arquivo.csv*
